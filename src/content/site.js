@@ -23,6 +23,10 @@ export const siteConfig = {
   telegramSupport: 'https://t.me/x8dlsupport',
   telegramChannel: 'https://t.me/x8dlofficial',
   telegramGroup: 'https://t.me/x8dlgroup',
+  // Download URLs
+  downloadUrl: 'https://github.com/ExclusiveAccount12/8xdl-landing/releases/download/v1.1.2/TorrentX-Full-v1.1.2.apk',
+  downloadUrlPlay: 'https://github.com/ExclusiveAccount12/8xdl-landing/releases/download/v1.1.2/TorrentX-Play-v1.1.2.apk',
+  githubRelease: 'https://github.com/ExclusiveAccount12/8xdl-landing/releases/tag/v1.1.2',
   // Page URLs
   urls: {
     home: '/',

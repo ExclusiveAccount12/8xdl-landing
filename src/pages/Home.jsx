@@ -19,6 +19,8 @@ const {
   currentVersion,
   compatibility,
   telegramChannel,
+  downloadUrl,
+  githubRelease,
   moduleCount,
   modules,
   websiteUrl,
@@ -354,14 +356,14 @@ export default function Home() {
             </div>
 
             <div className="release-actions">
-              <a href={telegramChannel} className="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">
+              <a href={downloadUrl} className="btn btn-primary btn-large" download>
                 <Download size={22} />
-                Get Current Release
+                Download APK (70 MB)
               </a>
-              <Link to="/permissions" className="btn btn-secondary btn-large">
+              <a href={githubRelease} className="btn btn-secondary btn-large" target="_blank" rel="noopener noreferrer">
                 <Globe2 size={20} />
-                Review Permissions
-              </Link>
+                View on GitHub
+              </a>
             </div>
           </div>
         </div>
