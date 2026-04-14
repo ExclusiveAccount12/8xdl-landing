@@ -1,0 +1,17 @@
+.animated-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.18;
+  filter: blur(0.5px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animated-background {
+    opacity: 0.08;
+  }
+}

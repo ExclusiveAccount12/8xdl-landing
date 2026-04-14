@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/torrentx",
+      "destination": "/8xdl",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

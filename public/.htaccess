@@ -1,0 +1,25 @@
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Canonical domain for cPanel hosting
+  RewriteCond %{HTTP_HOST} ^www\.8xdl\.in$ [NC]
+  RewriteRule ^ https://8xdl.in%{REQUEST_URI} [L,R=301]
+
+  # Force HTTPS on the primary domain
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP_HOST} ^(www\.)?8xdl\.in$ [NC]
+  RewriteRule ^ https://8xdl.in%{REQUEST_URI} [L,R=301]
+
+  # React Router SPA fallback
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+</IfModule>

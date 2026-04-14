@@ -1,0 +1,101 @@
+.permissions-page-modern .legal-content {
+  max-width: 1120px;
+}
+
+.permissions-hero {
+  max-width: 900px;
+}
+
+.permission-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.permission-summary-item,
+.permission-scenario-card {
+  padding: 1.3rem;
+  border-radius: 22px;
+  border: 1px solid rgba(128, 160, 255, 0.12);
+  background: linear-gradient(180deg, rgba(10, 18, 40, 0.92), rgba(5, 10, 24, 0.96));
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.24);
+}
+
+.permission-summary-item h2 {
+  font-size: 0.86rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
+}
+
+.permission-summary-item p {
+  margin-top: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.permission-callout {
+  margin-bottom: 1.25rem;
+}
+
+.permissions-grid-modern {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.permission-card-modern {
+  align-items: start;
+}
+
+.permission-card-modern .permission-content h3 {
+  margin-top: 0.9rem;
+}
+
+.permission-scenarios-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.permission-scenario-card span {
+  display: inline-flex;
+  padding: 0.38rem 0.68rem;
+  border-radius: 999px;
+  border: 1px solid rgba(var(--accent-rgb), 0.18);
+  background: rgba(var(--accent-rgb), 0.08);
+  color: var(--accent-soft);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.permission-scenario-card h3 {
+  margin-top: 0.9rem;
+  color: var(--text-primary);
+}
+
+.permission-scenario-card p {
+  margin-top: 0.7rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+@media (max-width: 960px) {
+  .permission-summary-grid,
+  .permissions-grid-modern,
+  .permission-scenarios-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .permission-summary-grid,
+  .permissions-grid-modern,
+  .permission-scenarios-grid {
+    grid-template-columns: 1fr;
+  }
+}
