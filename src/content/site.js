@@ -2,9 +2,9 @@ export const siteConfig = {
   brandName: '8xdl Download Manager',
   shortName: '8xdl',
   appDisplayName: '8XDL',
-  currentVersion: '1.1.2',
+  currentVersion: '1.1.3',
   compatibility: 'Android 8.0+ / API 26',
-  moduleCount: 9,
+  moduleCount: 10,
   modules: [
     { name: 'TorrentX', label: 'BitTorrent client' },
     { name: 'VideoX', label: 'Video player' },
@@ -14,7 +14,7 @@ export const siteConfig = {
     { name: 'M3u8X', label: 'HLS streamer' },
     { name: 'FeedX', label: 'RSS and feed reader' },
     { name: 'VaultX', label: 'Secure vault' },
-    { name: 'BrowserX', label: 'Web browser' },
+    { name: 'BrowserX', label: 'Web browser with Ad-Blocker' },
   ],
   supportEmail: 'dexterctf@tutamail.com',
   websiteUrl: 'https://8xdl.in',
@@ -24,9 +24,9 @@ export const siteConfig = {
   telegramChannel: 'https://t.me/x8dlofficial',
   telegramGroup: 'https://t.me/x8dlgroup',
   // Download URLs
-  downloadUrl: 'https://github.com/ExclusiveAccount12/8xdl-landing/releases/download/v1.1.2/TorrentX-Full-v1.1.2.apk',
+  downloadUrl: 'https://github.com/ExclusiveAccount12/8xdl-landing/releases/download/v1.1.3/TorrentX-Full-v1.1.3.apk',
   downloadUrlPlay: 'https://github.com/ExclusiveAccount12/8xdl-landing/releases/download/v1.1.2/TorrentX-Play-v1.1.2.apk',
-  githubRelease: 'https://github.com/ExclusiveAccount12/8xdl-landing/releases/tag/v1.1.2',
+  githubRelease: 'https://github.com/ExclusiveAccount12/8xdl-landing/releases/tag/v1.1.3',
   // Page URLs
   urls: {
     home: '/',
@@ -46,7 +46,7 @@ export const siteConfig = {
   // Legal info
   legal: {
     companyName: '8XDL',
-    lastUpdated: 'April 5, 2026',
+    lastUpdated: 'April 23, 2026',
     effectiveDate: 'April 3, 2026',
   },
 }
